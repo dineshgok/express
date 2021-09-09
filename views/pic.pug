@@ -1,0 +1,30 @@
+doctype html
+html
+   head
+      title all information
+   body
+     
+      table(border="2" cellpadding="10")
+        thead 
+    
+            th profile 
+
+            th firstname
+                
+            th lastname
+
+            th age
+                
+        tbody
+           
+            each val in allstudentdetails
+                tr
+                  td 
+                    img(src=`/${val.profilePic}` width="200")
+              
+                  td #{val.firstname}
+                  td #{val.lastname} 
+
+                  td #{val.age}
+                   
+                    

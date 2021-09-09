@@ -1,0 +1,14 @@
+doctype html
+html
+   head
+      title all information
+   body
+     each val in allstudentdetails
+                  img(src=`/${val.profilePic}` width="200")
+                  br
+                  h1 firstname:#{val.firstname}
+                  br
+                  h1 lastname:#{val.lastname} 
+                  br
+                  h1 age:#{val.age}
+                  

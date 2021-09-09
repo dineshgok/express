@@ -1,0 +1,33 @@
+doctype html
+html
+   head
+      title all information
+   body
+      p(style="color:blue") student details
+      h1(style="color:red") registration
+      table(border="2" cellpadding="10")
+        thead 
+    
+            th profile 
+
+            th name
+                
+            th delete
+
+            th Update
+                
+        tbody
+           
+            each val in allstudents 
+                tr
+                  td 
+                    img(src=`${val.profilePic}` width="200")
+              
+                  td 
+                    a(href=`/studentdetails/${val._id}`)  #{val.firstname}
+                  td 
+                    a(href=`/deletestudent/${val._id}`)  Deletestudents
+
+                  td
+                    a(href=`/addStudentWeightForm/${val._id}`) AddWeight
+                    

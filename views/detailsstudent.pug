@@ -1,0 +1,21 @@
+doctype html
+html
+   head
+      title all information
+   body
+      p(style="color:blue") student details
+      h1(style="color:red") registration
+      table(border="2" cellpadding="10")
+        thead 
+            th firstname
+                
+            th lastname 
+                
+            th age
+               
+           
+        each val in allstudents 
+            tr 
+                 td #{val.firstname}
+                 td #{val.lastname}
+                 td #{val.age}
